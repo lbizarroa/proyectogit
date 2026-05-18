@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Proyecto Web · ISAM</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Fondo decorativo -->
+  <div class="bg-grid"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <main>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="badge">Herramientas y Servicios Web · ISAM 2025</div>
+      <h1 class="title">
+        <span class="line-small">Hola, soy</span>
+        <span class="line-big" id="nombre-display">Tu Nombre Aquí</span>
+      </h1>
+      <p class="subtitle">Estudiante de Desarrollo Web · Escuela ISAM</p>
+      <div class="header-actions">
+        <button class="btn-primary" id="btn-nombre">✏️ Editar nombre</button>
+        <a class="btn-secondary" href="https://github.com" target="_blank">Ver en GitHub →</a>
+      </div>
+    </header>
+
+    <!-- TARJETAS -->
+    <section class="cards">
+
+      <article class="card">
+        <span class="card-tag">01 · Proyecto</span>
+        <h2>Mi primer repo Git</h2>
+        <p>Actividad práctica de la Unidad I del curso de Herramientas y Servicios para Desarrolladores en la Web. HTML + CSS + JS subido a GitHub.</p>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">02 · Stack</span>
+        <h2>Tecnologías usadas</h2>
+        <ul class="tech-list" id="tech-list"></ul>
+      </article>
+
+      <article class="card card-wide">
+        <span class="card-tag">03 · Historial Git</span>
+        <h2>Commits realizados</h2>
+        <div class="commit-log" id="commit-log"></div>
+      </article>
+
+    </section>
+
+    <!-- CONTADOR -->
+    <section class="counter-section">
+      <p class="counter-label">Líneas de código escritas</p>
+      <div class="counter" id="counter">0</div>
+      <p class="counter-sub">y contando...</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Actividad práctica · Sesión 4 · <code>git push origin main ✓</code></p>
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
